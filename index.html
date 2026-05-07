@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUBG Mobile: Livik Solo Showdown</title>
+    <style>
+        /* Modern, Dark Gaming Theme */
+        :root {
+            --primary: #f2a900; /* PUBG Yellow */
+            --bg-dark: #121212;
+            --bg-card: #1e1e1e;
+            --text-light: #ffffff;
+            --text-muted: #aaaaaa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1920&q=80') center/cover;
+            text-align: center;
+            padding: 100px 20px;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--primary);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: #000;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            background-color: #ffd13b;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .prize-pool {
+            text-align: center;
+            background-color: var(--bg-card);
+            padding: 40px;
+            border-radius: 8px;
+            margin-top: 40px;
+            border: 2px solid var(--primary);
+        }
+
+        .prize-amount {
+            font-size: 3rem;
+            color: var(--primary);
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #0a0a0a;
+            color: var(--text-muted);
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Livik Solo Showdown</h1>
+        <p class="subtitle">7 Matches. 30 Players. 1 Champion.</p>
+        <a href="register.html" class="btn">Register Now - $5 Entry</a>
+    </header>
+
+    <div class="container">
+        <div class="prize-pool">
+            <h2>🏆 Total Prize Pool</h2>
+            <div class="prize-amount">$140</div>
+            <p>Distributed among the <strong>Top 3 Players</strong></p>
+            <p><em>+ Bonus Gaming Equipment for top performers!</em></p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>📋 Tournament Format</h3>
+                <ul>
+                    <li><strong>Mode:</strong> Solo Battle Royale</li>
+                    <li><strong>Map:</strong> Livik</li>
+                    <li><strong>Matches:</strong> 7 Action-packed rounds</li>
+                    <li><strong>Capacity:</strong> Limited to 30 Local Players</li>
+                    <li><strong>Scoring:</strong> Kill Points + Placement Points</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>📺 Watch Live</h3>
+                <ul>
+                    <li><strong>Where:</strong> Exclusive YouTube Live Stream</li>
+                    <li><strong>When:</strong> All matches played in a single day</li>
+                    <li><strong>Format:</strong> Streamed with a delay to ensure fair play</li>
+                </ul>
+                <br>
+                <a href="#" class="btn" style="padding: 10px 20px; font-size: 1rem;">Subscribe to Channel</a>
+            </div>
+
+            <div class="card">
+                <h3>⚖️ Rules & Integrity</h3>
+                <ul>
+                    <li><strong>Skill Level:</strong> Open to all skill levels!</li>
+                    <li><strong>Verification:</strong> All players must complete ID & account verification.</li>
+                    <li><strong>Anti-Cheat:</strong> Strict monitoring. Any suspicious activity will be investigated. Cheaters face permanent suspension.</li>
+                    <li><strong>Disputes:</strong> All conflicts are judged impartially and evenly by tournament admins.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="register" style="text-align: center; margin-top: 60px;">
+            <h2>Ready to Drop In?</h2>
+            <p>Secure your spot before the 30 slots fill up!</p>
+            <a href="register.html" class="btn">Click Here to Pay & Register</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>PUBG Livik Solo Showdown © 2026. All rights reserved.</p>
+        <p>Got questions? <a href="#">Contact Admins</a></p>
+    </footer>
+
+</body>
+</html>
